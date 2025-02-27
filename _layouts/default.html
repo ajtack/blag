@@ -13,13 +13,13 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <script>
-  		//Read idtoken from query parameter with the same name.
-  		const params = new Proxy(new URLSearchParams(window.location.search), {
-  			get: (searchParams, prop) => searchParams.get(prop),
-  		});
-  		const idToken = params.idtoken || 'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UiLCJnaXZlbl9uYW1lIjoiSm9obiIsImZhbWlseV9uYW1lIjoiRG9lIiwiZW1haWwiOiJqb2huLmRvZUBleGFtcGxlLmNvbSIsInN1YiI6ImpvaG4uZG9lIiwiZXhwIjoxNzQxMDc0NTk0LCJpYXQiOjE3NDA2NDI1OTR9.qm5A3tv5Ov6523V8fAEI3TaAK8nXopZuqphEcq3-RtlYfCSzl7HogvbWjUO1zw8enzHM46SIPyRkovFwsDyPTA';
-  		window.getGliaContext = () => ({ idToken });
-  	</script>
+      //Read idtoken from query parameter with the same name.
+      const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+      });
+      const idToken = params.idtoken || 'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UiLCJnaXZlbl9uYW1lIjoiSm9obiIsImZhbWlseV9uYW1lIjoiRG9lIiwiZW1haWwiOiJqb2huLmRvZUBleGFtcGxlLmNvbSIsInN1YiI6ImpvaG4uZG9lIiwiZXhwIjoxNzQxMDc0NTk0LCJpYXQiOjE3NDA2NDI1OTR9.qm5A3tv5Ov6523V8fAEI3TaAK8nXopZuqphEcq3-RtlYfCSzl7HogvbWjUO1zw8enzHM46SIPyRkovFwsDyPTA';
+      window.getGliaContext = () => ({ idToken });
+    </script>
     <script async src="https://api.beta.glia.com/salemove_integration.js"></script>
   </head>
 
